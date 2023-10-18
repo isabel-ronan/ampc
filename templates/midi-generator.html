@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}AMPC | Protein MIDI Generator{% endblock %}
+
+{% block main %}
+
+<div class="container">
+
+<script src="../static/midiPlayer.js"></script>
+
+
+<midi-player src='{{ fileToPlay }}' sound-font>
+</midi-player>
+</div>
+{% endblock %}

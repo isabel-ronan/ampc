@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}AMPC | Protein MIDI Generator{% endblock %}
+
+{% block main %}
+
+<div class="container">
+<form action="midi-generator" method="post" enctype="multipart/form-data">
+    <label for="long_url">PDB File</label>
+    <input type="file" class="form-control" name="file" id="file" required>
+    <br>
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Generate MIDI</button>
+  </form>
+</div>
+
+{% endblock %}

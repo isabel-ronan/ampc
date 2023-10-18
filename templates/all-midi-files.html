@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}AMPC | Protein MIDI Generator{% endblock %}
+
+{% block main %}
+
+{% if codes %}
+<h2>Protein MIDI Files Already Created</h2>
+<ul>
+  {% for code in codes %}
+  <a href="{{ url_for('redirect_to_url', code=code) }}">
+    <li>{{ code }}</li>
+  </a>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

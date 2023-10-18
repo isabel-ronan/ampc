@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}AMPC | Protein MIDI Generator{% endblock %}
+
+{% block main %}
+
+{% if codes %}
+<h2>Protein MIDI Files Have Not Been Created</h2>
+<div class="container">
+  {% for code in codes %}
+    <p>{{ code }}</p>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% endblock %}
